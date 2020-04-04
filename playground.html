@@ -35,16 +35,25 @@
 			// Append the three.js canvas to the DOM
 			document.body.appendChild(renderer.domElement);
 
-			const geometry = new THREE.BoxGeometry();
-			const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-			const cube = new THREE.Mesh(geometry, material);
-			// Add the cube to the scene
+			const boxGeometry = new THREE.BoxGeometry();
+			const boxMaterial = new THREE.MeshBasicMaterial({
+				color: "#FF1493",
+				wireframe: true,
+				wireframeLinewidth: 10,
+			});
+			const cube = new THREE.Mesh(boxGeometry, boxMaterial);
+			// Add the shapes to the scene
 			scene.add(cube);
+
 			// Zoom the camera out
 			camera.position.z = 5;
 
 			const animate = () => {
 				requestAnimationFrame(animate);
+
+				cube.rotation.x += 0.01;
+				cube.rotation.y += 0.01;
+
 				renderer.render(scene, camera);
 			};
 
