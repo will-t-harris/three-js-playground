@@ -1,0 +1,20 @@
+{
+  "name": "three-js-playground",
+  "version": "1.0.0",
+  "description": "A space for me to experiment with different features in  [threeJS](https://threejs.org)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/will-t-harris/three-js-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/will-t-harris/three-js-playground/issues"
+  },
+  "homepage": "https://github.com/will-t-harris/three-js-playground#readme"
+}
