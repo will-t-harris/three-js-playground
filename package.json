@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/will-t-harris/three-js-playground/issues"
   },
-  "homepage": "https://github.com/will-t-harris/three-js-playground#readme"
+  "homepage": "https://github.com/will-t-harris/three-js-playground#readme",
+  "dependencies": {
+    "three": "^0.115.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
 }
